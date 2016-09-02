@@ -1,0 +1,93 @@
+*{
+	margin:0;
+	padding:0;
+	color:white;
+	text-decoration:none;
+
+}
+body{
+	background:linear-gradient(to right,#4c4c4c 0%,#474747 0%,#595959 0%,#666666 0%,#2d366e 78%,#2d366e 100%);
+	color:white;
+	font-family:"raleway";
+	text-shadow: 2px 2px black;
+	padding:1px;
+}
+#accordion{
+	margin:0 auto;
+	max-width:900px;
+	margin-top:50px;
+box-sizing:border-box;	
+
+}
+header{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+
+}
+header+main{
+	margin:0 auto;
+	padding:2rem;
+border:1px solid white;
+
+}
+
+.container{
+
+max-height:0;
+margin-bottom:0;
+
+overflow:hidden;
+
+   
+    box-sizing:border-box;
+transition: max-height .15s ease-out, margin-bottom .3s ease-out, padding .3s ease-out;
+
+    overflow:hidden;
+}
+
+p{
+	max-width:100%
+	max-height:100%;
+	
+}
+
+
+section::after{
+	content:"";
+	display:block;
+	margin-top:15px;
+	margin-bottom:15px;
+border:1px solid white;
+}
+
+
+
+#last::after{
+	content:"";
+	display: block;
+	margin-top:15px;
+	margin-bottom:15px;
+border:1px solid transparent;
+}
+#third{
+	
+	border-bottom:1px solid transparent;
+
+
+}
+
+
+
+.container:target{
+
+		max-height:300px;
+		max-width:100%;
+		padding-top:15px;
+		padding-bottom:15px;
+		margin-bottom:15px;
+
+	//height:50px;
+
+padding-bottom:15px;
+}
